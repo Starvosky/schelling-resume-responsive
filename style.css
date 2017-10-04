@@ -164,17 +164,13 @@ footer {
 	background: linear-gradient(171deg, red, black, red);
 	display: flex;
 	padding: 20px;
-}
-
-footer h3 {
-	padding-bottom: 20px;
-	font-size: 20px;
-	font-weight: bold;
+	text-align: center;
 }
 
 footer div {
 	padding-right: 100px;
-	align-self: flex-end;
+	align-self: center;
+	text-align: center;
 }
 
 footer a {
@@ -188,4 +184,32 @@ footer a:hover {
 footer a:active {
 	text-decoration: underline;
 	color: purple;
+}
+
+@media only screen and (max-width: 500px){
+	.head h1,aside {
+		display: block;
+	}
+	.head aside {
+		float: none;
+		padding: 10px;
+	}
+	.education,.skills {
+		display: block;
+	}
+	.education {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	.column p{
+		column-count: 1;
+		column-gap: 0;
+	}
+	footer {
+		flex-direction: column;
+	}
+	footer div {
+		padding-right: 0;
+		align-self: center;
+	}
 }
