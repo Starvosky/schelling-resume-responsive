@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  height: 500px;
+  background-color: red;
+}
+
+.main {
+  width: 25%;
+}
+
+.menu {
+  width: 75%;
+}
